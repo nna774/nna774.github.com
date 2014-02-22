@@ -5,10 +5,24 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-02-22T03:46:00Z</updated>
+  <updated>2014-02-22T23:35:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>自動化自動化</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/23/test.html"/>
+    <id>http://nna774.net/blog/2014/02/23/test.html</id>
+    <published>2014-02-22T23:35:00Z</published>
+    <updated>2014-02-23T08:37:17+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;記事の作成からコミット、デプロイまでを一連の流れでやってくれるシェルスクリプト書いた。&lt;/p&gt;
+
+&lt;p&gt;うまく動くかな&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>うーん。。。</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/02/22/u-n.html"/>
@@ -206,19 +220,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 あとClang とGHC の設定も後でしよう。&lt;/p&gt;
 
 &lt;p&gt;openStack の設定をしないといけない〜〜〜&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>インジェクション的なメールアドレス</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/12/inject.html"/>
-    <id>http://nna774.net/blog/2014/02/12/inject.html</id>
-    <published>2014-02-12T12:31:00Z</published>
-    <updated>2014-02-16T18:09:33+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;徳丸さんのメールアドレス見てびっくりしたので&lt;a href="&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#039;&amp;#111;&amp;#114;&amp;#039;&amp;#049;&amp;#039;&amp;#061;&amp;#039;&amp;#049;&amp;#039;&amp;#045;&amp;#045;&amp;#064;&amp;#110;&amp;#110;&amp;#097;&amp;#055;&amp;#055;&amp;#052;&amp;#046;&amp;#110;&amp;#101;&amp;#116;"&gt;'or'1'='1'–@nna774.net&lt;/a&gt; でメールの送受信ができる設定をした。
-(いつ使うんだ)&lt;/p&gt;
 </content>
   </entry>
 </feed>
