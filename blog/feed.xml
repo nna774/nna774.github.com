@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>/dev/nona</title>
+  <subtitle>いっと☆わーくす！</subtitle>
+  <id>http://nna774.net/blog</id>
+  <link href="http://nna774.net/blog"/>
+  <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
+  <updated>2014-02-22T03:46:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>うーん。。。</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/22/u-n.html"/>
+    <id>http://nna774.net/blog/2014/02/22/u-n.html</id>
+    <published>2014-02-22T03:46:00Z</published>
+    <updated>2014-02-22T12:49:46+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;現状deploy すると同時にcommit するようにはなってないから、deploy後に手動でcommit してるわけですが、そこに手動の余地挟むのは良くないなぁ。
+deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
+
+&lt;p&gt;1コマンドでcommit してdeploy するようになんとかしよう。&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Foursquare のスーパーユーザーレベル1 になった</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/21/suv1.html"/>
+    <id>http://nna774.net/blog/2014/02/21/suv1.html</id>
+    <published>2014-02-20T22:38:00Z</published>
+    <updated>2014-02-21T07:43:21+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Foursquare のスーパーユーザーレベル1 になった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://ja.foursquare.com/nonamea774"&gt;nonamea774&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;これでちょっと間違ってるとことか見付けたときに修正を自分でできたりするので、精神的に良い。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>SPDY...</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/20/spdy.html"/>
+    <id>http://nna774.net/blog/2014/02/20/spdy.html</id>
+    <published>2014-02-20T03:43:00Z</published>
+    <updated>2014-02-20T12:46:23+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;うーん&lt;/p&gt;
+
+&lt;p&gt;Raspberry Pi でmod_spdy 動かすの、難しい感じなのかなぁ……&lt;/p&gt;
+
+&lt;p&gt;うまくいかない&lt;/p&gt;
+
+&lt;p&gt;折角なので使いたいし、適当なVM とかにこのページホストさせるように変更しようかなぁ……&lt;/p&gt;
+
+&lt;p&gt;そういう点では静的コンテンツしかないのは便利だやっぱ&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>いい鴨鍋であった</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/20/kamo.html"/>
+    <id>http://nna774.net/blog/2014/02/20/kamo.html</id>
+    <published>2014-02-20T02:24:00Z</published>
+    <updated>2014-02-20T12:36:02+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;某賞金で鴨鍋を食べにいった。
+&lt;a href="https://ja.foursquare.com/nonamea774/checkin/53047cac498ea89d33444d6f"&gt;ここ&lt;/a&gt;に行きました。&lt;/p&gt;
+
+&lt;p&gt;普段鴨肉なんかなかなか食べられないけどすごく美味しかった。
+来年も勝利して行きたいものです。&lt;/p&gt;
+
+&lt;p&gt;〆に蕎麦っての、知らなかったけど実際美味しかった。&lt;/p&gt;
+
+&lt;p&gt;あとヒレ酒も香ばしくてすごくよかった。&lt;/p&gt;
+
+&lt;p&gt;以上小学生並の感想でした。&lt;/p&gt;
+
+&lt;p&gt;二次会、三次会もあって飲みすぎたので少々二日酔いです。。。&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>せっかくなので</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/19/allssl.html"/>
+    <id>http://nna774.net/blog/2014/02/19/allssl.html</id>
+    <published>2014-02-18T20:56:00Z</published>
+    <updated>2014-02-19T05:58:55+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;せっかくなので、http でアクセスしても https にリダイレクトしてしまうようにした。&lt;/p&gt;
+
+&lt;p&gt;SPDY, 入れようとしたらなんかOpenSSL のビルドが始まった……(このページをホストしてるのはRaspberry Pi です)。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>SSL対応にした</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/19/ssl.html"/>
+    <id>http://nna774.net/blog/2014/02/19/ssl.html</id>
+    <published>2014-02-18T20:32:00Z</published>
+    <updated>2014-02-19T05:55:00+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;以前からやろうやろうと思っていた、StartSSL でSSL 証明証を取った。&lt;/p&gt;
+
+&lt;p&gt;というわけでとりあえずこのページをSSL 対応にした。
+&lt;a href="https://nna774.net"&gt;nna774.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;SPDY 対応も試してみたいと思って色々調べてる。&lt;/p&gt;
+
+&lt;p&gt;パラノイアが捗る。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/17/test.html"/>
+    <id>http://nna774.net/blog/2014/02/17/test.html</id>
+    <published>2014-02-16T21:11:00Z</published>
+    <updated>2014-02-21T05:32:23+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;書くことが思いうかばないので、画像添付のテストでもしてみる。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/blog/2014/02/17/1012.png" alt="テスト" width="250" /&gt;&lt;/p&gt;
+
+&lt;h3 id="n"&gt;(追記n)&lt;/h3&gt;
+&lt;p&gt;やっとできた。&lt;/p&gt;
+
+&lt;p&gt;いちおうこの画像の元画像です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.flickr.com/photos/nna774/7308889078/" title="アイコン by nna_774, on Flickr"&gt;&lt;img src="https://farm9.staticflickr.com/8153/7308889078_6f0278bedc.jpg" width="250" height="250" alt="アイコン" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>五十鈴改二</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/16/isuzu.html"/>
+    <id>http://nna774.net/blog/2014/02/16/isuzu.html</id>
+    <published>2014-02-15T16:25:00Z</published>
+    <updated>2014-02-16T18:10:11+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="section"&gt;五十鈴&lt;/h1&gt;
+&lt;p&gt;伊勢神宮に行った。&lt;/p&gt;
+
+&lt;h1 id="gpg"&gt;GPG&lt;/h1&gt;
+
+&lt;p&gt;今日は一人にGPG の布教ができた。
+いい話だった。
+みんなもGPG 使いましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.jpcert.or.jp/magazine/security/pgpquick.html"&gt;このへん&lt;/a&gt; とか&lt;a href="http://edb.miyakyo-u.ac.jp/ugawa/Enigmail/"&gt;このへん&lt;/a&gt; とかを読めばThunderbird とかで簡単にできます。&lt;/p&gt;
+
+&lt;p&gt;メールの暗号化はともかく、署名は簡単にできるので、どんどんやっていきましょう。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>ジェンキンス氏</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/14/jenkins2.html"/>
+    <id>http://nna774.net/blog/2014/02/14/jenkins2.html</id>
+    <published>2014-02-14T14:55:00Z</published>
+    <updated>2014-02-16T18:10:05+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="section"&gt;執事&lt;/h1&gt;
+&lt;p&gt;執事、実際便利である。
+今はKMC のサーバに立ってるジェンキンス氏を使ってるけど、自分用に一つ立ててもいいかもしれない？&lt;/p&gt;
+
+&lt;h1 id="section-1"&gt;ケッコンカッコカリ&lt;/h1&gt;
+&lt;p&gt;みんなどうやってそんなに何隻もLv.99 にしてるんだ。
+最近は20~30 の若い子を改にしたりとかしかしてない。&lt;/p&gt;
+
+&lt;h1 id="section-2"&gt;ほげほげ&lt;/h1&gt;
+&lt;p&gt;いっと☆わーくす！ って単語(単語？)、意外とググラビリティ高いのか、このページが結構上位に来るみたいだ。&lt;/p&gt;
+
+&lt;h1 id="section-3"&gt;ふがふが&lt;/h1&gt;
+&lt;p&gt;記事ページ見て気づいたけど、記事ページに記事タイトルが出ていない。
+情報量の無いタイトルだとは言ってもあとでなおしとこう。&lt;/p&gt;
+
+&lt;h1 id="trick"&gt;桜Trick&lt;/h1&gt;
+&lt;p&gt;まだ最新話が見れていないのでつらい。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>執事さんに毎日GCC をbuild させるはなし</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/14/jenkins.html"/>
+    <id>http://nna774.net/blog/2014/02/14/jenkins.html</id>
+    <published>2014-02-13T15:05:00Z</published>
+    <updated>2014-02-16T18:09:59+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;jenkins さんにgcc のhead を毎日build してもらうようにした。
+あとClang とGHC の設定も後でしよう。&lt;/p&gt;
+
+&lt;p&gt;openStack の設定をしないといけない〜〜〜&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>インジェクション的なメールアドレス</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/02/12/inject.html"/>
+    <id>http://nna774.net/blog/2014/02/12/inject.html</id>
+    <published>2014-02-12T12:31:00Z</published>
+    <updated>2014-02-16T18:09:33+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;徳丸さんのメールアドレス見てびっくりしたので&lt;a href="&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#039;&amp;#111;&amp;#114;&amp;#039;&amp;#049;&amp;#039;&amp;#061;&amp;#039;&amp;#049;&amp;#039;&amp;#045;&amp;#045;&amp;#064;&amp;#110;&amp;#110;&amp;#097;&amp;#055;&amp;#055;&amp;#052;&amp;#046;&amp;#110;&amp;#101;&amp;#116;"&gt;'or'1'='1'–@nna774.net&lt;/a&gt; でメールの送受信ができる設定をした。
+(いつ使うんだ)&lt;/p&gt;
+</content>
+  </entry>
+</feed>
