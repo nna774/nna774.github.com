@@ -5,10 +5,27 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-02-25T06:53:00Z</updated>
+  <updated>2014-03-01T13:43:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>3月ですね〜</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/01/3gatsu.html"/>
+    <id>http://nna774.net/blog/2014/03/01/3gatsu.html</id>
+    <published>2014-03-01T13:43:00Z</published>
+    <updated>2014-03-01T22:54:37+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;もう二月が終ってしまった……
+28日までしかないとか聞いてねーですよ。&lt;/p&gt;
+
+&lt;p&gt;iPhone5s に機種変更しました。
+今まで4s だったから縦長い〜&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>前期試験の日</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/02/25/1nen.html"/>
@@ -193,34 +210,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.jpcert.or.jp/magazine/security/pgpquick.html"&gt;このへん&lt;/a&gt; とか&lt;a href="http://edb.miyakyo-u.ac.jp/ugawa/Enigmail/"&gt;このへん&lt;/a&gt; とかを読めばThunderbird とかで簡単にできます。&lt;/p&gt;
 
 &lt;p&gt;メールの暗号化はともかく、署名は簡単にできるので、どんどんやっていきましょう。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>ジェンキンス氏</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/14/jenkins2.html"/>
-    <id>http://nna774.net/blog/2014/02/14/jenkins2.html</id>
-    <published>2014-02-14T14:55:00Z</published>
-    <updated>2014-02-16T18:10:05+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;h1 id="section"&gt;執事&lt;/h1&gt;
-&lt;p&gt;執事、実際便利である。
-今はKMC のサーバに立ってるジェンキンス氏を使ってるけど、自分用に一つ立ててもいいかもしれない？&lt;/p&gt;
-
-&lt;h1 id="section-1"&gt;ケッコンカッコカリ&lt;/h1&gt;
-&lt;p&gt;みんなどうやってそんなに何隻もLv.99 にしてるんだ。
-最近は20~30 の若い子を改にしたりとかしかしてない。&lt;/p&gt;
-
-&lt;h1 id="section-2"&gt;ほげほげ&lt;/h1&gt;
-&lt;p&gt;いっと☆わーくす！ って単語(単語？)、意外とググラビリティ高いのか、このページが結構上位に来るみたいだ。&lt;/p&gt;
-
-&lt;h1 id="section-3"&gt;ふがふが&lt;/h1&gt;
-&lt;p&gt;記事ページ見て気づいたけど、記事ページに記事タイトルが出ていない。
-情報量の無いタイトルだとは言ってもあとでなおしとこう。&lt;/p&gt;
-
-&lt;h1 id="trick"&gt;桜Trick&lt;/h1&gt;
-&lt;p&gt;まだ最新話が見れていないのでつらい。&lt;/p&gt;
 </content>
   </entry>
 </feed>
