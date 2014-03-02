@@ -5,10 +5,29 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-01T13:43:00Z</updated>
+  <updated>2014-03-02T06:02:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>適当なChrome 拡張を作った</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/02/paranoia.html"/>
+    <id>http://nna774.net/blog/2014/03/02/paranoia.html</id>
+    <published>2014-03-02T06:02:00Z</published>
+    <updated>2014-03-02T15:36:52+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://github.com/nna774/paranoia"&gt;paranoia&lt;/a&gt; を作った。&lt;/p&gt;
+
+&lt;p&gt;どういうことをしてくれるすごいやつかというと、google から検索してWikipedia やyoutube のページを開いた時、他のページからのリンクを辿った時などに、https のアドレスではなく、http のほうへとリンクが張られていたりして、SSL を通してページを見ていないことがよくある。
+そういう時に自動でhttps のほうのページにリダイレクトしてくれる拡張です。&lt;/p&gt;
+
+&lt;p&gt;あまり需要なさそうだけど私は欲しかった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/kb-ssl-enforcer/flcpelgcagfhfoegekianiofphddckof?"&gt;KB SSL Enforcer&lt;/a&gt; が、あまりいい感じだとは思わなかったってのも理由の一つだ。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>3月ですね〜</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/01/3gatsu.html"/>
@@ -187,29 +206,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://www.flickr.com/photos/nna774/7308889078/" title="アイコン by nna_774, on Flickr"&gt;&lt;img src="https://farm9.staticflickr.com/8153/7308889078_6f0278bedc.jpg" width="250" height="250" alt="アイコン" /&gt;&lt;/a&gt;&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>五十鈴改二</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/16/isuzu.html"/>
-    <id>http://nna774.net/blog/2014/02/16/isuzu.html</id>
-    <published>2014-02-15T16:25:00Z</published>
-    <updated>2014-02-16T18:10:11+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;h1 id="section"&gt;五十鈴&lt;/h1&gt;
-&lt;p&gt;伊勢神宮に行った。&lt;/p&gt;
-
-&lt;h1 id="gpg"&gt;GPG&lt;/h1&gt;
-
-&lt;p&gt;今日は一人にGPG の布教ができた。
-いい話だった。
-みんなもGPG 使いましょう。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://www.jpcert.or.jp/magazine/security/pgpquick.html"&gt;このへん&lt;/a&gt; とか&lt;a href="http://edb.miyakyo-u.ac.jp/ugawa/Enigmail/"&gt;このへん&lt;/a&gt; とかを読めばThunderbird とかで簡単にできます。&lt;/p&gt;
-
-&lt;p&gt;メールの暗号化はともかく、署名は簡単にできるので、どんどんやっていきましょう。&lt;/p&gt;
 </content>
   </entry>
 </feed>
