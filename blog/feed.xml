@@ -5,10 +5,29 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-02T06:02:00Z</updated>
+  <updated>2014-03-09T16:24:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>KernelVM を聞きにいった</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/10/kernelvm.html"/>
+    <id>http://nna774.net/blog/2014/03/10/kernelvm.html</id>
+    <published>2014-03-09T16:24:00Z</published>
+    <updated>2014-03-10T01:29:54+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;いろいろ面白い話が聞けた。&lt;/p&gt;
+
+&lt;p&gt;もう眠いので今日聞いた話の中で試してみたいもののリンクをはっておくだけにします。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.slideshare.net/fadis/linux-32051658"&gt;小さいLinux環境の作り方&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://speakerdeck.com/ntddk/introduction-to-qubes-os-ja"&gt;Qubes OS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>適当なChrome 拡張を作った</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/02/paranoia.html"/>
@@ -184,28 +203,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 &lt;p&gt;SPDY 対応も試してみたいと思って色々調べてる。&lt;/p&gt;
 
 &lt;p&gt;パラノイアが捗る。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/17/test.html"/>
-    <id>http://nna774.net/blog/2014/02/17/test.html</id>
-    <published>2014-02-16T21:11:00Z</published>
-    <updated>2014-02-21T05:32:23+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;書くことが思いうかばないので、画像添付のテストでもしてみる。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/blog/2014/02/17/1012.png" alt="テスト" width="250" /&gt;&lt;/p&gt;
-
-&lt;h3 id="n"&gt;(追記n)&lt;/h3&gt;
-&lt;p&gt;やっとできた。&lt;/p&gt;
-
-&lt;p&gt;いちおうこの画像の元画像です。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://www.flickr.com/photos/nna774/7308889078/" title="アイコン by nna_774, on Flickr"&gt;&lt;img src="https://farm9.staticflickr.com/8153/7308889078_6f0278bedc.jpg" width="250" height="250" alt="アイコン" /&gt;&lt;/a&gt;&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
