@@ -5,16 +5,43 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-09T16:24:00Z</updated>
+  <updated>2014-03-16T12:07:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>春合宿しゅーりょー</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/16/hanase.html"/>
+    <id>http://nna774.net/blog/2014/03/16/hanase.html</id>
+    <published>2014-03-16T12:07:00Z</published>
+    <updated>2014-03-17T14:16:38+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;下界に帰ってきた。&lt;/p&gt;
+
+&lt;p&gt;スライドこうかいしないと。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>春合宿1日目</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/12/hanase.html"/>
+    <id>http://nna774.net/blog/2014/03/12/hanase.html</id>
+    <published>2014-03-12T08:36:00Z</published>
+    <updated>2014-03-12T19:56:50+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;電波の入らないところに来ています。&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>KernelVM を聞きにいった</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/10/kernelvm.html"/>
     <id>http://nna774.net/blog/2014/03/10/kernelvm.html</id>
     <published>2014-03-09T16:24:00Z</published>
-    <updated>2014-03-10T01:29:54+09:00</updated>
+    <updated>2014-03-10T01:33:18+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -170,39 +197,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 
 &lt;p&gt;二次会、三次会もあって飲みすぎたので少々二日酔いです。。。&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>せっかくなので</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/19/allssl.html"/>
-    <id>http://nna774.net/blog/2014/02/19/allssl.html</id>
-    <published>2014-02-18T20:56:00Z</published>
-    <updated>2014-02-19T05:58:55+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;せっかくなので、http でアクセスしても https にリダイレクトしてしまうようにした。&lt;/p&gt;
-
-&lt;p&gt;SPDY, 入れようとしたらなんかOpenSSL のビルドが始まった……(このページをホストしてるのはRaspberry Pi です)。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>SSL対応にした</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/19/ssl.html"/>
-    <id>http://nna774.net/blog/2014/02/19/ssl.html</id>
-    <published>2014-02-18T20:32:00Z</published>
-    <updated>2014-02-19T05:55:00+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;以前からやろうやろうと思っていた、StartSSL でSSL 証明証を取った。&lt;/p&gt;
-
-&lt;p&gt;というわけでとりあえずこのページをSSL 対応にした。
-&lt;a href="https://nna774.net"&gt;nna774.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;SPDY 対応も試してみたいと思って色々調べてる。&lt;/p&gt;
-
-&lt;p&gt;パラノイアが捗る。&lt;/p&gt;
 </content>
   </entry>
 </feed>
