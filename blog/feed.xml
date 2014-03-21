@@ -5,16 +5,85 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-19T18:35:00Z</updated>
+  <updated>2014-03-21T19:32:00Z</updated>
   <author>
-    <name>Blog Author</name>
+    <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>GR-SAKURA の環境を整えたい</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/22/sakura.html"/>
+    <id>http://nna774.net/blog/2014/03/22/sakura.html</id>
+    <published>2014-03-21T19:32:00Z</published>
+    <updated>2014-03-22T07:25:28+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;適当なメモなエントリだ。
+もしかしたらまとめるかもしれない。&lt;/p&gt;
+
+&lt;h1 id="rx-elf-gcc"&gt;rx-elf-gcc&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のソースコードをビルド中にたたかったメモ。&lt;/p&gt;
+
+&lt;p&gt;基本的に&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; を参考に&lt;/p&gt;
+
+&lt;h2 id="binutils"&gt;binutils&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;http://trac.cross-lfs.org/ticket/926
+sed -i -e 's/@colophon/@@colophon/' \
+-e 's/doc@cygnus.com/doc@@cygnus.com/' bfd/doc/bfd.texinfo
+
+sed -i -e 's/@colophon/@@colophon/' \
+-e 's/doc@cygnus.com/doc@@cygnus.com/' ld/ld.texinfo
+
+sed -i -e 's/@itemx/@@itemx/' binutils/doc/binutils.texi
+
+sed -i -e 's/@itemx/@@itemx/' gas/doc/c-mips.texi
+sed -i -e 's/@itemx/@@itemx/' gas/doc/c-tic54x.texi
+sed -i -e 's/@itemx/@@itemx/' gas/doc/c-score.texi
+
+gas/doc/c-tic54x.texi に
+@code expected braces
+らしいので適当に追加
+
+./c-arc.texi:223: command @bullet not accepting argument in brace should not be on @table line
+よくわからんけど、
+gas/doc/c-arc.texi:223 の
+@table @bullet
+を
+@table @code
+にした
+
+./c-arm.texi:401: command @bullet not accepting argument in brace should not be on @table line
+うえとおなじ
+
+./c-arm.texi:477: node `ARM Floating Point' lacks menu item for `ARM-Relocations' despite being its Up target
+そことその下を@@ にして、22行目のメニューからARM Floating Point を削除
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="gcc"&gt;gcc&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;../../gcc/doc/invoke.texi:5644: @itemx must follow @item
+sed -i -e 's/@itemx/@@itemx/' gcc/doc/invoke.texi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="newlib"&gt;newlib&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;rx-elf-gcc -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/ -isystem /home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/targ-include -isystem /home/nona/build/newlib-1.20.0-20121219/newlib/libc/include -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/rx -L/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/libnosys -L/home/nona/build/newlib-1.20.0-20121219/libgloss/rx    -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"1.20.0\" -DPACKAGE_STRING=\"newlib\ 1.20.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I. -I../../../.././newlib/libc/argz -ffunction-sections -fdata-sections  -DMISSING_SYSCALL_NAMES -fno-builtin      -g -O2 -c -o lib_a-dummy.o `test -f 'dummy.c' || echo '../../../.././newlib/libc/argz/'`dummy.c
+/home/nona/local/rx-tools/bin/rx-elf-gcc: 行 498: 対応する `)' を探索中に予期しないファイル終了 (EOF) です
+/home/nona/local/rx-tools/bin/rx-elf-gcc: 行 5038: 構文エラー: 予期しないファイル終了 (EOF) です
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;うーん って感じ
+まだ未解決&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>GR-SAKURA であそんでみた(1回目)</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/20/sakura.html"/>
     <id>http://nna774.net/blog/2014/03/20/sakura.html</id>
     <published>2014-03-19T18:35:00Z</published>
-    <updated>2014-03-20T04:22:49+09:00</updated>
+    <updated>2014-03-20T04:26:28+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -42,13 +111,21 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
 &lt;p&gt;Serial.setDefault() をsetup() で呼んでおくことで、printf() でもシリアルに出力できるらしい。(serial.h に書いてあった)
 最初printf("hoge"); して何も出ないなーと思っていたら、printf() は改行が来るまでバッファしているらしい。&lt;/p&gt;
 
+&lt;p&gt;/dev/ttyACM0 に見えてるので、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /dev/ttyACM0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;でsakura 側で書いたものが見えた。&lt;/p&gt;
+
 &lt;h1 id="rx-elf-gcc"&gt;rx-elf-gcc&lt;/h1&gt;
 &lt;p&gt;オンラインコンパイラで毎回build するのは面倒だなーと思っていたら、makefile を眺めていたらrx-elf-gcc でクロスコンパイルできるらしい。
 クロスコンパイル環境整えたいけど、AUR のrx-elf-gcc はbuild できなかったので、自分でビルドしないとなー って感じだ。&lt;/p&gt;
 
 &lt;h1 id="http-api"&gt;HTTP API&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://tool-cloud.renesas.com/Renesas/ref/api.html"&gt;API&lt;/a&gt; が存在して、
-これを使ってAPI 経由でWeb Compiler を使えるっぽい。&lt;/p&gt;
+これを使ってAPI 経由でWeb Compiler を使えるっぽい。
+手元でビルドする環境を簡単に整えられないならこっちだけでがんばってもいいかも&lt;/p&gt;
 
 &lt;p&gt;ビルドもこれでできるので、いい感じのelisp でも気が向いたら書きたい。&lt;/p&gt;
 </content>
@@ -195,27 +272,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://ja.foursquare.com/nonamea774"&gt;nonamea774&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;これでちょっと間違ってるとことか見付けたときに修正を自分でできたりするので、精神的に良い。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>SPDY...</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/20/spdy.html"/>
-    <id>http://nna774.net/blog/2014/02/20/spdy.html</id>
-    <published>2014-02-20T03:43:00Z</published>
-    <updated>2014-02-20T12:46:23+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;うーん&lt;/p&gt;
-
-&lt;p&gt;Raspberry Pi でmod_spdy 動かすの、難しい感じなのかなぁ……&lt;/p&gt;
-
-&lt;p&gt;うまくいかない&lt;/p&gt;
-
-&lt;p&gt;折角なので使いたいし、適当なVM とかにこのページホストさせるように変更しようかなぁ……&lt;/p&gt;
-
-&lt;p&gt;そういう点では静的コンテンツしかないのは便利だやっぱ&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
