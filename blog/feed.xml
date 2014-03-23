@@ -5,16 +5,28 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-21T19:32:00Z</updated>
+  <updated>2014-03-23T21:12:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>クロスコンパイラbuild できた</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/03/24/sakura.html"/>
+    <id>http://nna774.net/blog/2014/03/24/sakura.html</id>
+    <published>2014-03-23T21:12:00Z</published>
+    <updated>2014-03-24T06:15:52+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/blog/2014/03/22/sakura.html"&gt;前回&lt;/a&gt; build できないっていってたけど、&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のv13.01 を使っていたことに気づいたので、v14.01 のコードをおとしてきて、&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; のとうりにやったらできた。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>GR-SAKURA の環境を整えたい</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/22/sakura.html"/>
     <id>http://nna774.net/blog/2014/03/22/sakura.html</id>
     <published>2014-03-21T19:32:00Z</published>
-    <updated>2014-03-22T07:25:28+09:00</updated>
+    <updated>2014-03-22T07:32:56+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -28,23 +40,31 @@
 
 &lt;h2 id="binutils"&gt;binutils&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;http://trac.cross-lfs.org/ticket/926
+&lt;p&gt;http://trac.cross-lfs.org/ticket/926&lt;/p&gt;
+&lt;pre&gt;
 sed -i -e 's/@colophon/@@colophon/' \
--e 's/doc@cygnus.com/doc@@cygnus.com/' bfd/doc/bfd.texinfo
-
+    -e 's/doc@cygnus.com/doc@@cygnus.com/' bfd/doc/bfd.texinfo
+&lt;/pre&gt;
+&lt;pre&gt;
 sed -i -e 's/@colophon/@@colophon/' \
--e 's/doc@cygnus.com/doc@@cygnus.com/' ld/ld.texinfo
-
+    -e 's/doc@cygnus.com/doc@@cygnus.com/' ld/ld.texinfo
+&lt;/pre&gt;
+&lt;pre&gt;
 sed -i -e 's/@itemx/@@itemx/' binutils/doc/binutils.texi
-
+&lt;/pre&gt;
+&lt;pre&gt;
 sed -i -e 's/@itemx/@@itemx/' gas/doc/c-mips.texi
 sed -i -e 's/@itemx/@@itemx/' gas/doc/c-tic54x.texi
 sed -i -e 's/@itemx/@@itemx/' gas/doc/c-score.texi
+&lt;/pre&gt;
 
+&lt;pre&gt;
 gas/doc/c-tic54x.texi に
 @code expected braces
 らしいので適当に追加
+&lt;/pre&gt;
 
+&lt;pre&gt;
 ./c-arc.texi:223: command @bullet not accepting argument in brace should not be on @table line
 よくわからんけど、
 gas/doc/c-arc.texi:223 の
@@ -52,26 +72,32 @@ gas/doc/c-arc.texi:223 の
 を
 @table @code
 にした
+&lt;/pre&gt;
 
+&lt;pre&gt;
 ./c-arm.texi:401: command @bullet not accepting argument in brace should not be on @table line
 うえとおなじ
+&lt;/pre&gt;
 
+&lt;pre&gt;
 ./c-arm.texi:477: node `ARM Floating Point' lacks menu item for `ARM-Relocations' despite being its Up target
 そことその下を@@ にして、22行目のメニューからARM Floating Point を削除
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;
 
 &lt;h2 id="gcc"&gt;gcc&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;../../gcc/doc/invoke.texi:5644: @itemx must follow @item
+&lt;pre&gt;
+../../gcc/doc/invoke.texi:5644: @itemx must follow @item
 sed -i -e 's/@itemx/@@itemx/' gcc/doc/invoke.texi
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;
 
 &lt;h2 id="newlib"&gt;newlib&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;rx-elf-gcc -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/ -isystem /home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/targ-include -isystem /home/nona/build/newlib-1.20.0-20121219/newlib/libc/include -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/rx -L/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/libnosys -L/home/nona/build/newlib-1.20.0-20121219/libgloss/rx    -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"1.20.0\" -DPACKAGE_STRING=\"newlib\ 1.20.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I. -I../../../.././newlib/libc/argz -ffunction-sections -fdata-sections  -DMISSING_SYSCALL_NAMES -fno-builtin      -g -O2 -c -o lib_a-dummy.o `test -f 'dummy.c' || echo '../../../.././newlib/libc/argz/'`dummy.c
+&lt;pre&gt;
+rx-elf-gcc -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/ -isystem /home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/targ-include -isystem /home/nona/build/newlib-1.20.0-20121219/newlib/libc/include -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/rx -L/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/libnosys -L/home/nona/build/newlib-1.20.0-20121219/libgloss/rx    -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"1.20.0\" -DPACKAGE_STRING=\"newlib\ 1.20.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I. -I../../../.././newlib/libc/argz -ffunction-sections -fdata-sections  -DMISSING_SYSCALL_NAMES -fno-builtin      -g -O2 -c -o lib_a-dummy.o `test -f 'dummy.c' || echo '../../../.././newlib/libc/argz/'`dummy.c
 /home/nona/local/rx-tools/bin/rx-elf-gcc: 行 498: 対応する `)' を探索中に予期しないファイル終了 (EOF) です
 /home/nona/local/rx-tools/bin/rx-elf-gcc: 行 5038: 構文エラー: 予期しないファイル終了 (EOF) です
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;
 
 &lt;p&gt;うーん って感じ
 まだ未解決&lt;/p&gt;
@@ -256,22 +282,6 @@ deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
 
 &lt;p&gt;1コマンドでcommit してdeploy するようになんとかしよう。&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Foursquare のスーパーユーザーレベル1 になった</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/21/suv1.html"/>
-    <id>http://nna774.net/blog/2014/02/21/suv1.html</id>
-    <published>2014-02-20T22:38:00Z</published>
-    <updated>2014-02-21T07:43:21+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Foursquare のスーパーユーザーレベル1 になった。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://ja.foursquare.com/nonamea774"&gt;nonamea774&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;これでちょっと間違ってるとことか見付けたときに修正を自分でできたりするので、精神的に良い。&lt;/p&gt;
 </content>
   </entry>
 </feed>
