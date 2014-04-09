@@ -5,26 +5,95 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-04-09T14:03:00Z</updated>
+  <updated>2014-04-09T15:39:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>mod_rewrite</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/04/10/mod_rewrite.html"/>
+    <id>http://nna774.net/blog/2014/04/10/mod_rewrite.html</id>
+    <published>2014-04-09T15:39:00Z</published>
+    <updated>2014-04-10T00:48:45+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;現状、このページは、静的html等は事前にgzip で圧縮して、それをmod_rewrite でいいかんじにURL を書きかえてAccept-Encoding: gzip があればgzip版を返すよう設定してある。
+……と思ってたんだけれども、Accept-Encoding: gzip がついてなくても、gzip で返したり、対応するgz ファイルが存在しないと404 になったりしていた。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
+RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
+RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;のように書いていた。&lt;/p&gt;
+
+&lt;p&gt;調べていると、結局、RewriteCond が影響するのは、次のRewriteRule だけであることがわかった。
+それでAccept-Encoding: gzip のないindex.html へのアクセスにもgzip圧縮されたものを返したり、index.html.gz がないと404 になったりしていたのだ。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.css$ $1.css.gz [QSA,L]
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
+RewriteCond %{HTTP:Accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;のように書きなおした現在、期待どうりの挙動をしているように見える。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Heartbleed</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/04/09/heartbleed.html"/>
     <id>http://nna774.net/blog/2014/04/09/heartbleed.html</id>
     <published>2014-04-09T14:03:00Z</published>
-    <updated>2014-04-09T23:09:13+09:00</updated>
+    <updated>2014-04-09T23:13:07+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;最近流行りのOpenSSL のバグですが、Raspbian にすぐにアップデートが来なかったので、これを機にArch Linux に乗り変えることにした。&lt;/p&gt;
+    <content type="html">&lt;p&gt;最近流行りのOpenSSL のバグですが、うちのRaspberry Pi の上のRaspbian にすぐにアップデートが来なかったので、これを機にArch Linux に乗り変えることにした。&lt;/p&gt;
 
 &lt;p&gt;まだいろいろ設定している途中ですが、とりあえず80番と443番だけNAT を通すようにしてここも復活。&lt;/p&gt;
 
 &lt;p&gt;SSL の秘密鍵とりかえたいけどStart SSL は再発行にお金かかるらしいし、うーん ってかんじだ。
 そもそも攻撃に狙われた可能性は低いとは思うけれど……(よくない考え方だ。安全側に倒すべきではある)&lt;/p&gt;
 
+</content>
+  </entry>
+  <entry>
+    <title>atom</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/04/07/atom.html"/>
+    <id>http://nna774.net/blog/2014/04/07/atom.html</id>
+    <published>2014-04-06T15:00:00Z</published>
+    <updated>2014-04-09T23:56:41+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="section"&gt;11歳ですよもう&lt;/h1&gt;
+&lt;p&gt;鉄腕アトムも11歳。 だいぶ未来に来てしまった……&lt;/p&gt;
+
+&lt;h1 id="section-1"&gt;もざいく&lt;/h1&gt;
+&lt;p&gt;アトムの誕生日は、電気の恋人の歌詞で覚えている。&lt;/p&gt;
+
+&lt;p&gt;歌詞： &lt;a href="http://www.sham.jp/studio/sound/denki/index.shtml"&gt;Sham Studio&lt;/a&gt; (リンク先音注意)&lt;/p&gt;
+
+&lt;pre&gt;2003年4月7日に　未来のロボが生まれなくても&lt;/pre&gt;
+
+&lt;h2 id="section-2"&gt;電気の恋人&lt;/h2&gt;
+&lt;p&gt;私の小さな時にはもう&lt;em&gt;PC&lt;/em&gt; 98 ではなくて、&lt;em&gt;Windows&lt;/em&gt; 98 が家にあったような時代であったので、この曲の歌詞の最初のほうのような事は実際にはやったことは無いのだけれど(私の初めて触ったBASIC はWindows98 の上での&lt;a href="http://hp.vector.co.jp/authors/VA008683/"&gt;十進BASIC&lt;/a&gt;だ。プログラムの意味もよくわからないまま、豊富に同梱されていたサンプルプログラムを改造してみていた)、それでも、この曲を初めて聞いてからだけの機械の進化はすさまじくて、この曲自体を&lt;a href="http://www.enterbrain.co.jp/magical-cute/sp/heartsnative/songlist.html"&gt;機械が歌う&lt;/a&gt;ほどだ。&lt;/p&gt;
+
+&lt;p&gt;小さい時に聞いていたこの歌をミクが歌うというのは、なんというか、機械の進歩を強く表わしている気がして本当に好きだ。&lt;/p&gt;
+
+&lt;p&gt;この曲の入ったCD は現在入手困難ですが(わたしも欲しい)、&lt;a href="http://www.amazon.co.jp/dp/B00569BHDY"&gt;Amazon&lt;/a&gt; や&lt;a href="https://itunes.apple.com/jp/album/id106636118"&gt;iTunes&lt;/a&gt; なら購入することができます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.enterbrain.co.jp/magical-cute/sp/heartsnative/"&gt;Heartsnative&lt;/a&gt; は他にも、「みんなみくみくにしてあげる♪」は"機械と人間" って感じがしてすごくいいと思う(そういう意味では、&lt;a href="http://www.mosaictune.com/"&gt;Heartsnative2&lt;/a&gt; のほうはミクしか歌っていないので、比べると好きじゃない)。&lt;/p&gt;
+
+&lt;p&gt;何が言いたいかよくわからない記事になってしまった。アトムの誕生日はどっかにいってミクが好き って記事になってるし。しかも遅れて公開だし。&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -254,36 +323,6 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
 &lt;p&gt;iPhone5s に機種変更しました。
 今まで4s だったから縦長い〜&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>前期試験の日</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/25/1nen.html"/>
-    <id>http://nna774.net/blog/2014/02/25/1nen.html</id>
-    <published>2014-02-25T06:53:00Z</published>
-    <updated>2014-02-25T15:56:49+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;もう一年経ったとかウケる。&lt;/p&gt;
-
-&lt;p&gt;ウケない。&lt;/p&gt;
-
-&lt;p&gt;つらいかんじだ。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>自動化自動化</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/23/test.html"/>
-    <id>http://nna774.net/blog/2014/02/23/test.html</id>
-    <published>2014-02-22T23:35:00Z</published>
-    <updated>2014-02-23T08:37:17+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;記事の作成からコミット、デプロイまでを一連の流れでやってくれるシェルスクリプト書いた。&lt;/p&gt;
-
-&lt;p&gt;うまく動くかな&lt;/p&gt;
 </content>
   </entry>
 </feed>
