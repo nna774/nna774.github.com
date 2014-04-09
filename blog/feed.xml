@@ -5,10 +5,28 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-03-23T21:12:00Z</updated>
+  <updated>2014-04-09T14:03:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>Heartbleed</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/04/09/heartbleed.html"/>
+    <id>http://nna774.net/blog/2014/04/09/heartbleed.html</id>
+    <published>2014-04-09T14:03:00Z</published>
+    <updated>2014-04-09T23:09:13+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;最近流行りのOpenSSL のバグですが、Raspbian にすぐにアップデートが来なかったので、これを機にArch Linux に乗り変えることにした。&lt;/p&gt;
+
+&lt;p&gt;まだいろいろ設定している途中ですが、とりあえず80番と443番だけNAT を通すようにしてここも復活。&lt;/p&gt;
+
+&lt;p&gt;SSL の秘密鍵とりかえたいけどStart SSL は再発行にお金かかるらしいし、うーん ってかんじだ。
+そもそも攻撃に狙われた可能性は低いとは思うけれど……(よくない考え方だ。安全側に倒すべきではある)&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>クロスコンパイラbuild できた</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/03/24/sakura.html"/>
@@ -266,22 +284,6 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
     <content type="html">&lt;p&gt;記事の作成からコミット、デプロイまでを一連の流れでやってくれるシェルスクリプト書いた。&lt;/p&gt;
 
 &lt;p&gt;うまく動くかな&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>うーん。。。</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/02/22/u-n.html"/>
-    <id>http://nna774.net/blog/2014/02/22/u-n.html</id>
-    <published>2014-02-22T03:46:00Z</published>
-    <updated>2014-02-24T09:07:08+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;現状deploy すると同時にcommit するようにはなってないから、deploy後に手動でcommit してるわけですが、そこに手動の余地挟むのは良くないなぁ。
-deploy後にしばしばcommit するの忘れる。&lt;/p&gt;
-
-&lt;p&gt;1コマンドでcommit してdeploy するようになんとかしよう。&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
