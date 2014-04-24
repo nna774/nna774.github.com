@@ -5,10 +5,47 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-04-09T15:39:00Z</updated>
+  <updated>2014-04-19T16:34:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>ミッドナイト念仏に行った</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/04/20/nidnight.html"/>
+    <id>http://nna774.net/blog/2014/04/20/nidnight.html</id>
+    <published>2014-04-19T16:34:00Z</published>
+    <updated>2014-04-20T02:46:05+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;昨日(暦としては18日の夜)、ミッドナイト念仏に行った。&lt;/p&gt;
+
+&lt;h1 id="is-"&gt;is 何&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.chion-in.or.jp/03_gyoji/tei/gyok.html"&gt;公式ページ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;知恩院で行なわれる法然上人の法要のイベント(?) のうちの一つである。&lt;/p&gt;
+
+&lt;iframe src="https://www.flickr.com/photos/nna774/13902685426/in/set-72157644071467422/player/" width="500" height="375" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" oallowfullscreen="" msallowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://www.flickr.com/photos/nna774/sets/72157644071467422/"&gt;set&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;夜通し木魚を叩きつづけるイベントである(こんなふうに書いたら怒られそうだ)。&lt;/p&gt;
+
+&lt;p&gt;普段は入れない知恩院三門に入ることができるイベントでもある。&lt;/p&gt;
+
+&lt;h1 id="beat"&gt;かなり低く見積っても数万回のBeat&lt;/h1&gt;
+
+&lt;p&gt;三時ぐらいに知恩院に行って朝まで木魚を叩きつづけた。&lt;/p&gt;
+
+&lt;p&gt;中で撮影は禁止されていたけれど、特に録音は禁止されてなかったので、すこしだけ録音した。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="/blog/2014/04/20/nenbutsu.ogg"&gt;nenbutsu.ogg&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/145490050&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_artwork=true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;謎のトランス感のあるイベントであった。&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>mod_rewrite</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/04/10/mod_rewrite.html"/>
@@ -306,23 +343,6 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
 &lt;p&gt;あまり需要なさそうだけど私は欲しかった。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/kb-ssl-enforcer/flcpelgcagfhfoegekianiofphddckof?"&gt;KB SSL Enforcer&lt;/a&gt; が、あまりいい感じだとは思わなかったってのも理由の一つだ。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>3月ですね〜</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/01/3gatsu.html"/>
-    <id>http://nna774.net/blog/2014/03/01/3gatsu.html</id>
-    <published>2014-03-01T13:43:00Z</published>
-    <updated>2014-03-01T22:54:37+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;もう二月が終ってしまった……
-28日までしかないとか聞いてねーですよ。&lt;/p&gt;
-
-&lt;p&gt;iPhone5s に機種変更しました。
-今まで4s だったから縦長い〜&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
