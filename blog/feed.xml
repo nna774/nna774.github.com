@@ -5,10 +5,31 @@
   <id>http://nna774.net/blog</id>
   <link href="http://nna774.net/blog"/>
   <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
-  <updated>2014-04-19T16:34:00Z</updated>
+  <updated>2014-04-24T16:11:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>lifepng</title>
+    <link rel="alternate" href="http://nna774.net/blog/2014/04/25/lifepng.html"/>
+    <id>http://nna774.net/blog/2014/04/25/lifepng.html</id>
+    <published>2014-04-24T16:11:00Z</published>
+    <updated>2014-04-25T01:17:53+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/lifepng/"&gt;LifePNG&lt;/a&gt; を作った。
+&lt;a href="https://github.com/nna774/lifepng"&gt;Github レポジトリ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="グライダー" src="/img/glider.png" /&gt;
+こんな画像を簡単に作れるようなやつです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="時計2 - Gif Animation" src="/img/life/clock2.gif" /&gt; 
+こんなのもできる。&lt;/p&gt;
+
+&lt;p&gt;くわしくは&lt;a href="https://github.com/nna774/lifepng"&gt;Github レポジトリ&lt;/a&gt; を参照してください。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>ミッドナイト念仏に行った</title>
     <link rel="alternate" href="http://nna774.net/blog/2014/04/20/nidnight.html"/>
@@ -324,25 +345,6 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
   &lt;li&gt;&lt;a href="http://www.slideshare.net/fadis/linux-32051658"&gt;小さいLinux環境の作り方&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://speakerdeck.com/ntddk/introduction-to-qubes-os-ja"&gt;Qubes OS&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>適当なChrome 拡張を作った</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/02/paranoia.html"/>
-    <id>http://nna774.net/blog/2014/03/02/paranoia.html</id>
-    <published>2014-03-02T06:02:00Z</published>
-    <updated>2014-03-02T15:36:52+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="https://github.com/nna774/paranoia"&gt;paranoia&lt;/a&gt; を作った。&lt;/p&gt;
-
-&lt;p&gt;どういうことをしてくれるすごいやつかというと、google から検索してWikipedia やyoutube のページを開いた時、他のページからのリンクを辿った時などに、https のアドレスではなく、http のほうへとリンクが張られていたりして、SSL を通してページを見ていないことがよくある。
-そういう時に自動でhttps のほうのページにリダイレクトしてくれる拡張です。&lt;/p&gt;
-
-&lt;p&gt;あまり需要なさそうだけど私は欲しかった。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/kb-ssl-enforcer/flcpelgcagfhfoegekianiofphddckof?"&gt;KB SSL Enforcer&lt;/a&gt; が、あまりいい感じだとは思わなかったってのも理由の一つだ。&lt;/p&gt;
 </content>
   </entry>
 </feed>
