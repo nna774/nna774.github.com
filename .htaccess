@@ -1,3 +1,9 @@
+SetEnv TZ Asia/Tokyo
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .css .js
+Header set Vary Accept-Encoding
+
 RewriteEngine on
 
 RewriteCond %{HTTPS} off
@@ -17,12 +23,12 @@ RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
 
 <FilesMatch "\.css\.gz$">
-  ForceType   text/css
+  ForceType   'text/css; charset=UTF-8'
   AddEncoding gzip .gz
 </FilesMatch>
  
 <FilesMatch "\.js\.gz$">
-  ForceType   application/javascript
+  ForceType   'application/javascript; charset=UTF-8'
   AddEncoding gzip .gz
 </FilesMatch>
 
@@ -40,5 +46,8 @@ ExpiresByType image/webp "access plus 60 days"
 
 ExpiresByType application/javascript "access plus 60 days"
 ExpiresByType text/css "access plus 60 days"
+ExpiresByType text/html "access plus 30 minutes"
 
-#Header append Vary Accept-Encoding
+ErrorDocument 401 /errors/401/
+ErrorDocument 403 /errors/403/
+ErrorDocument 404 /errors/404/

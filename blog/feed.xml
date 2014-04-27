@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>/dev/nona</title>
   <subtitle>いっと☆わーくす！</subtitle>
-  <id>http://nna774.net/blog</id>
-  <link href="http://nna774.net/blog"/>
-  <link href="http://nna774.net/blog/blog/feed.xml" rel="self"/>
+  <id>https://nna774.net/blog</id>
+  <link href="https://nna774.net/blog"/>
+  <link href="https://nna774.net/blog/feed.xml" rel="self"/>
   <updated>2014-04-24T16:11:00Z</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
   <entry>
     <title>lifepng</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/04/25/lifepng.html"/>
-    <id>http://nna774.net/blog/2014/04/25/lifepng.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/04/25/lifepng.html"/>
+    <id>https://nna774.net/blog/2014/04/25/lifepng.html</id>
     <published>2014-04-24T16:11:00Z</published>
     <updated>2014-04-25T01:17:53+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/lifepng/"&gt;LifePNG&lt;/a&gt; を作った。
 &lt;a href="https://github.com/nna774/lifepng"&gt;Github レポジトリ&lt;/a&gt;&lt;/p&gt;
@@ -32,12 +32,12 @@
   </entry>
   <entry>
     <title>ミッドナイト念仏に行った</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/04/20/nidnight.html"/>
-    <id>http://nna774.net/blog/2014/04/20/nidnight.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/04/20/nidnight.html"/>
+    <id>https://nna774.net/blog/2014/04/20/nidnight.html</id>
     <published>2014-04-19T16:34:00Z</published>
-    <updated>2014-04-20T02:46:05+09:00</updated>
+    <updated>2014-04-25T01:37:19+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;昨日(暦としては18日の夜)、ミッドナイト念仏に行った。&lt;/p&gt;
 
@@ -69,12 +69,12 @@
   </entry>
   <entry>
     <title>mod_rewrite</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/04/10/mod_rewrite.html"/>
-    <id>http://nna774.net/blog/2014/04/10/mod_rewrite.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/04/10/mod_rewrite.html"/>
+    <id>https://nna774.net/blog/2014/04/10/mod_rewrite.html</id>
     <published>2014-04-09T15:39:00Z</published>
     <updated>2014-04-10T00:48:45+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;現状、このページは、静的html等は事前にgzip で圧縮して、それをmod_rewrite でいいかんじにURL を書きかえてAccept-Encoding: gzip があればgzip版を返すよう設定してある。
 ……と思ってたんだけれども、Accept-Encoding: gzip がついてなくても、gzip で返したり、対応するgz ファイルが存在しないと404 になったりしていた。&lt;/p&gt;
@@ -107,12 +107,12 @@ RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
   </entry>
   <entry>
     <title>Heartbleed</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/04/09/heartbleed.html"/>
-    <id>http://nna774.net/blog/2014/04/09/heartbleed.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/04/09/heartbleed.html"/>
+    <id>https://nna774.net/blog/2014/04/09/heartbleed.html</id>
     <published>2014-04-09T14:03:00Z</published>
     <updated>2014-04-09T23:13:07+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;最近流行りのOpenSSL のバグですが、うちのRaspberry Pi の上のRaspbian にすぐにアップデートが来なかったので、これを機にArch Linux に乗り変えることにした。&lt;/p&gt;
 
@@ -125,12 +125,12 @@ RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
   </entry>
   <entry>
     <title>atom</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/04/07/atom.html"/>
-    <id>http://nna774.net/blog/2014/04/07/atom.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/04/07/atom.html"/>
+    <id>https://nna774.net/blog/2014/04/07/atom.html</id>
     <published>2014-04-06T15:00:00Z</published>
-    <updated>2014-04-09T23:56:41+09:00</updated>
+    <updated>2014-04-25T01:36:59+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;h1 id="section"&gt;11歳ですよもう&lt;/h1&gt;
 &lt;p&gt;鉄腕アトムも11歳。 だいぶ未来に来てしまった……&lt;/p&gt;
@@ -156,24 +156,24 @@ RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
   </entry>
   <entry>
     <title>クロスコンパイラbuild できた</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/24/sakura.html"/>
-    <id>http://nna774.net/blog/2014/03/24/sakura.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/24/sakura.html"/>
+    <id>https://nna774.net/blog/2014/03/24/sakura.html</id>
     <published>2014-03-23T21:12:00Z</published>
     <updated>2014-03-24T06:15:52+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/blog/2014/03/22/sakura.html"&gt;前回&lt;/a&gt; build できないっていってたけど、&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のv13.01 を使っていたことに気づいたので、v14.01 のコードをおとしてきて、&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; のとうりにやったらできた。&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>GR-SAKURA の環境を整えたい</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/22/sakura.html"/>
-    <id>http://nna774.net/blog/2014/03/22/sakura.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/22/sakura.html"/>
+    <id>https://nna774.net/blog/2014/03/22/sakura.html</id>
     <published>2014-03-21T19:32:00Z</published>
     <updated>2014-03-22T07:32:56+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;適当なメモなエントリだ。
 もしかしたらまとめるかもしれない。&lt;/p&gt;
@@ -251,12 +251,12 @@ rx-elf-gcc -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/ -isystem /ho
   </entry>
   <entry>
     <title>GR-SAKURA であそんでみた(1回目)</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/20/sakura.html"/>
-    <id>http://nna774.net/blog/2014/03/20/sakura.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/20/sakura.html"/>
+    <id>https://nna774.net/blog/2014/03/20/sakura.html</id>
     <published>2014-03-19T18:35:00Z</published>
     <updated>2014-03-20T04:26:28+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;GR-SAKURA が部室にあったので遊んでみた。&lt;/p&gt;
 
@@ -303,12 +303,12 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
   </entry>
   <entry>
     <title>春合宿しゅーりょー</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/16/hanase.html"/>
-    <id>http://nna774.net/blog/2014/03/16/hanase.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/16/hanase.html"/>
+    <id>https://nna774.net/blog/2014/03/16/hanase.html</id>
     <published>2014-03-16T12:07:00Z</published>
     <updated>2014-03-17T14:16:38+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;下界に帰ってきた。&lt;/p&gt;
 
@@ -317,12 +317,12 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
   </entry>
   <entry>
     <title>春合宿1日目</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/12/hanase.html"/>
-    <id>http://nna774.net/blog/2014/03/12/hanase.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/12/hanase.html"/>
+    <id>https://nna774.net/blog/2014/03/12/hanase.html</id>
     <published>2014-03-12T08:36:00Z</published>
     <updated>2014-03-12T19:56:50+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;電波の入らないところに来ています。&lt;/p&gt;
 
@@ -330,12 +330,12 @@ Serial.println(); には文字リテラルと数字は渡すことができた�
   </entry>
   <entry>
     <title>KernelVM を聞きにいった</title>
-    <link rel="alternate" href="http://nna774.net/blog/2014/03/10/kernelvm.html"/>
-    <id>http://nna774.net/blog/2014/03/10/kernelvm.html</id>
+    <link rel="alternate" href="https://nna774.net/blog/2014/03/10/kernelvm.html"/>
+    <id>https://nna774.net/blog/2014/03/10/kernelvm.html</id>
     <published>2014-03-09T16:24:00Z</published>
     <updated>2014-03-10T01:33:18+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;いろいろ面白い話が聞けた。&lt;/p&gt;
 
