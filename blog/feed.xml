@@ -5,10 +5,235 @@
   <id>https://nna774.net/blog</id>
   <link href="https://nna774.net/blog"/>
   <link href="https://nna774.net/blog/feed.xml" rel="self"/>
-  <updated>2014-04-25T01:11:00+09:00</updated>
+  <updated>2014-05-31T04:35:00+09:00</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>Google Test</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/05/31/googletest.html"/>
+    <id>https://nna774.net/blog/2014/05/31/googletest.html</id>
+    <published>2014-05-31T04:35:00+09:00</published>
+    <updated>2014-05-31T05:17:14+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="https://github.com/nna774/2048-cpp"&gt;2048AI&lt;/a&gt; の内部で、謎のbit 演算がたくさん使われてきて辛くなってきた。&lt;/p&gt;
+
+&lt;p&gt;どっか間違えててもまずわからないと思う。&lt;/p&gt;
+
+&lt;p&gt;というわけでテストを書きたいなーと思ったので、いい感じのC++ のテストツールがないか聞いてみたところ、Google Test を教えてもらった。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://minus9d.hatenablog.com/entry/20140119/1390117516"&gt;ここ&lt;/a&gt; を見ながら適当に設定すればいい感じになった。&lt;/p&gt;
+
+&lt;p&gt;Google Test のコードを&lt;a href="https://code.google.com/p/googletest/"&gt;ここ&lt;/a&gt; からダウンロードしてきて、解凍。解凍後 gtest-1.7.0 に移動し、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ./configure
+$ make 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これで準備完了。依存しているテストツールのヴァージョンが異なるとややこしいので、システムにはインストールしないほうがいいらしい。&lt;/p&gt;
+
+&lt;p&gt;googletest のmake ディレクトリ以下を参考にしてMakefile を書けばいいかんじに動くようになった。&lt;/p&gt;
+
+&lt;p&gt;CI ツールで以下のようなコマンドを走らせてtest している。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git submodule init
+git submodule update
+cd test
+unzip gtest-1.7.0.zip &amp;gt; /dev/null
+cd gtest-1.7.0
+./configure &amp;gt; /dev/null
+make &amp;gt; /dev/null
+cd ../../
+make OPT="-O3 -pipe"
+make test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こんな感じでテストが走ってる。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from BoardTest
+[ RUN      ] BoardTest.log2
+[       OK ] BoardTest.log2 (0 ms)
+[ RUN      ] BoardTest.pow2
+[       OK ] BoardTest.pow2 (0 ms)
+[ RUN      ] BoardTest.gridMirrorIDRAND
+[       OK ] BoardTest.gridMirrorIDRAND (0 ms)
+[ RUN      ] BoardTest.popCountRAND
+[       OK ] BoardTest.popCountRAND (1 ms)
+[----------] 4 tests from BoardTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 4 tests.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ちゃんとテストを書かないと。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>たまこラブストーリーを見た</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/05/22/tamako.html"/>
+    <id>https://nna774.net/blog/2014/05/22/tamako.html</id>
+    <published>2014-05-22T03:28:00+09:00</published>
+    <updated>2014-05-22T04:53:10+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;たまこラブストーリーを見にいった。京都ではMOVIX でしか上映されていないので、寺町通まで行って見た。&lt;/p&gt;
+
+&lt;h1 id="section"&gt;一応ネタバレ注意？&lt;/h1&gt;
+
+&lt;p&gt;いい話だった。いい映画だった。&lt;/p&gt;
+
+&lt;p&gt;たまこの«光» とまで言われる程だ。&lt;/p&gt;
+
+&lt;p&gt;アニメを復習したくなった。&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;大まかに&lt;/h2&gt;
+
+&lt;p&gt;みんなが"変化" していく話であった。 つらかった。&lt;/p&gt;
+
+&lt;p&gt;もち蔵は東京の大学に行くし、栞さんは海外に留学しようとする。そもそもみんなは高校3年生で、"卒業" という言葉がつきまとう。&lt;/p&gt;
+
+&lt;p&gt;個人的に一番印象的だったのは、あんこが中学校の制服を着るシーンだった。
+あのシーンは「この世界にも永遠は無いのだなぁ」 という気持ちになった。&lt;/p&gt;
+
+&lt;p&gt;だれも「ここにあるよ」 とは言ってくれない。&lt;/p&gt;
+
+&lt;h2 id="gj-"&gt;GJ部 もそうだった&lt;/h2&gt;
+
+&lt;p&gt;最近ぐるぐるの放送があったので見直したのだが、あの作品は、1話から11話までは特に話に進行もなにもなく進むのだが、12話で先輩たちが卒業してしまう回がある。&lt;/p&gt;
+
+&lt;p&gt;リピートディスクという物がGJ部には存在するのだが、それが2種類のメニューがディスクを再生すると選べて、「1話から12話をリピートする」 というものと、「1話から11話をリピートする」 というものがある。&lt;/p&gt;
+
+&lt;p&gt;12話の卒業などという永遠の世界から外れたものを見ないための措置であると思う。&lt;/p&gt;
+
+&lt;h2 id="section-2"&gt;私は&lt;/h2&gt;
+
+&lt;p&gt;私は何事も変化してほしくない。&lt;/p&gt;
+
+&lt;p&gt;変化するということは壊れてしまう、という事でもある。&lt;/p&gt;
+
+&lt;p&gt;完全に静止した世界(最早それを世界と言っていいのかわからないが) に住みたい。&lt;/p&gt;
+
+&lt;h3 id="nona-"&gt;だからnona が産まれた？&lt;/h3&gt;
+
+&lt;p&gt;nona は環境を含んだクロージャである。と言っても良いと思う。&lt;/p&gt;
+
+&lt;p&gt;物理的な私は現実世界に制約されてしまうが、その上で動く人格であるnona はその制約を無視して変化しない世界に逃げこめす。&lt;/p&gt;
+
+&lt;p&gt;どうでもいいですね。&lt;/p&gt;
+
+&lt;h1 id="section-3"&gt;まとめ&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;b&gt; たまこラブストーリー良かったから見よう！！！ &lt;/b&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;映画見て帰り道に浮き石を通って帰った。こういう時に現地周辺に住んでると嬉しい。&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>2048AI の進捗状況です。</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/05/19/2048.html"/>
+    <id>https://nna774.net/blog/2014/05/19/2048.html</id>
+    <published>2014-05-19T03:25:00+09:00</published>
+    <updated>2014-05-22T04:21:46+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;タイトル通り2048AI の進捗状況です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="/blog/2014/05/19/grid.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/nna774/2048-cpp/tree/4a4c432e56b61984d6edd42269694e4bd0eebd80"&gt;現在のソースコード&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;高速化
+grid を今まではstd::array&amp;lt;std::array&amp;lt;int,4&amp;gt;,4&amp;gt; でもっていたが、uint64_t で持つようにした。 それだけで大分速くなった気がする。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;世界と分離
+koyone は思考をし、世界は盤面の状態を持つだけにきちんと分離できた。他の思考用class を用意して差し替えることが簡単にできるようになった。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;探索面
+一手後の世界を予想する時に、ナイーブにするなら動かした後に開いてるマスに2 か4 を入れるが、開いてるマスすべてに2 を入れて読めば若干良くなるという話を聞いたので試してみた。それがKoyoneNext だ。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section"&gt;思考クラスたち&lt;/h2&gt;
+
+&lt;h3 id="koyone"&gt;Koyone&lt;/h3&gt;
+&lt;p&gt;単純にある程度の深さまで全探索を試みる。
+評価関数はグリッド上の数字について、その数字にその数字のlog2 をとったものを掛けてたものの和。
+それが一番大きくなるものの存在する方向に動かす。
+&lt;a href="https://nna774.net/blog/2014/05/13/2048.html"&gt;前回&lt;/a&gt; の時の思考はこれだった。&lt;/p&gt;
+
+&lt;h3 id="koyonenext"&gt;KoyoneNext&lt;/h3&gt;
+&lt;p&gt;基本的にはKoyone と同じ。nextPossibleWorld だけを上記のように変更してある。
+ちょっと以前のより強くなった。&lt;/p&gt;
+
+&lt;h3 id="kihime"&gt;Kihime&lt;/h3&gt;
+&lt;p&gt;モンテカルロによる探索を実装しようとしてまだ中身は空だ。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>nginx に移行していた</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/05/13/nginx.html"/>
+    <id>https://nna774.net/blog/2014/05/13/nginx.html</id>
+    <published>2014-05-13T11:46:00+09:00</published>
+    <updated>2014-05-13T11:53:26+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;HeartBleed の時にRaspberry Pi のOS をArch に変えたので、nginx 1.6 が簡単に使えるみたいだったので、乗りかえた。&lt;/p&gt;
+
+&lt;p&gt;nginx 1.6 ではなんとデフォルトでSPDY に対応している！&lt;/p&gt;
+
+&lt;p&gt;というわけでnna774.net もSPDY に対応しました。&lt;/p&gt;
+
+&lt;p&gt;quic も試してみたいけれど、まだ対応してるものは無いっぽい？ですね……&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>2048-AI コンテスト</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/05/13/2048.html"/>
+    <id>https://nna774.net/blog/2014/05/13/2048.html</id>
+    <published>2014-05-13T01:49:00+09:00</published>
+    <updated>2014-05-13T09:35:32+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;KMC で2048 のAI の強さを競うコンテストがあった。&lt;/p&gt;
+
+&lt;p&gt;2048 as a Servise を使ってたたかうもので、言語や環境等は自由であった。&lt;/p&gt;
+
+&lt;p&gt;まず始めにruby のサンプルコードを書いた。&lt;a href="https://github.com/nna774/2048-ruby/tree/randomMove"&gt;サンプルコード&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;そのまましばらくruby で書きつづけていた(mikutter のプラグイン以外でruby を書くのは初めてだった)。 このへんまで書いた。 &lt;a href="https://github.com/nna774/2048-ruby"&gt;nna774/2048-ruby&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ナイーブに全探索を数手先までしているようなかんじだった。&lt;/p&gt;
+
+&lt;p&gt;どうにも遅かったのでC++ で書きなおした。実際に使ったのが&lt;a href="https://github.com/nna774/2048-cpp/tree/512/"&gt;これ&lt;/a&gt; です。モンテカルロも実装しかけてたけど、バグバグだったのであきらめた。レポジトリは&lt;a href="https://github.com/nna774/2048-cpp"&gt;ココ&lt;/a&gt;。 名前はkoyone です。&lt;/p&gt;
+
+&lt;p&gt;結果はこんな感じ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="/blog/2014/05/13/rank.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;かろうじて5位でした。&lt;/p&gt;
+
+&lt;p&gt;もっと次回までには強くしないといけない。&lt;/p&gt;
+
+&lt;p&gt;次回コンテストは6/4。 それまでに強化しよう……&lt;/p&gt;
+
+&lt;h1 id="ref"&gt;ref&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://kmc.hatenablog.jp/entry/2014/05/12/021050"&gt;2048AIコンテストを開催します！ - KMC活動ブログ&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>lifepng</title>
     <link rel="alternate" href="https://nna774.net/blog/2014/04/25/lifepng.html"/>
@@ -164,187 +389,6 @@ RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
       <name>NoNameA 774</name>
     </author>
     <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/blog/2014/03/22/sakura.html"&gt;前回&lt;/a&gt; build できないっていってたけど、&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のv13.01 を使っていたことに気づいたので、v14.01 のコードをおとしてきて、&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; のとうりにやったらできた。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>GR-SAKURA の環境を整えたい</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/22/sakura.html"/>
-    <id>https://nna774.net/blog/2014/03/22/sakura.html</id>
-    <published>2014-03-22T04:32:00+09:00</published>
-    <updated>2014-03-22T07:32:56+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;適当なメモなエントリだ。
-もしかしたらまとめるかもしれない。&lt;/p&gt;
-
-&lt;h1 id="rx-elf-gcc"&gt;rx-elf-gcc&lt;/h1&gt;
-&lt;p&gt;&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のソースコードをビルド中にたたかったメモ。&lt;/p&gt;
-
-&lt;p&gt;基本的に&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; を参考に&lt;/p&gt;
-
-&lt;h2 id="binutils"&gt;binutils&lt;/h2&gt;
-
-&lt;p&gt;http://trac.cross-lfs.org/ticket/926&lt;/p&gt;
-&lt;pre&gt;
-sed -i -e 's/@colophon/@@colophon/' \
-    -e 's/doc@cygnus.com/doc@@cygnus.com/' bfd/doc/bfd.texinfo
-&lt;/pre&gt;
-&lt;pre&gt;
-sed -i -e 's/@colophon/@@colophon/' \
-    -e 's/doc@cygnus.com/doc@@cygnus.com/' ld/ld.texinfo
-&lt;/pre&gt;
-&lt;pre&gt;
-sed -i -e 's/@itemx/@@itemx/' binutils/doc/binutils.texi
-&lt;/pre&gt;
-&lt;pre&gt;
-sed -i -e 's/@itemx/@@itemx/' gas/doc/c-mips.texi
-sed -i -e 's/@itemx/@@itemx/' gas/doc/c-tic54x.texi
-sed -i -e 's/@itemx/@@itemx/' gas/doc/c-score.texi
-&lt;/pre&gt;
-
-&lt;pre&gt;
-gas/doc/c-tic54x.texi に
-@code expected braces
-らしいので適当に追加
-&lt;/pre&gt;
-
-&lt;pre&gt;
-./c-arc.texi:223: command @bullet not accepting argument in brace should not be on @table line
-よくわからんけど、
-gas/doc/c-arc.texi:223 の
-@table @bullet
-を
-@table @code
-にした
-&lt;/pre&gt;
-
-&lt;pre&gt;
-./c-arm.texi:401: command @bullet not accepting argument in brace should not be on @table line
-うえとおなじ
-&lt;/pre&gt;
-
-&lt;pre&gt;
-./c-arm.texi:477: node `ARM Floating Point' lacks menu item for `ARM-Relocations' despite being its Up target
-そことその下を@@ にして、22行目のメニューからARM Floating Point を削除
-&lt;/pre&gt;
-
-&lt;h2 id="gcc"&gt;gcc&lt;/h2&gt;
-
-&lt;pre&gt;
-../../gcc/doc/invoke.texi:5644: @itemx must follow @item
-sed -i -e 's/@itemx/@@itemx/' gcc/doc/invoke.texi
-&lt;/pre&gt;
-
-&lt;h2 id="newlib"&gt;newlib&lt;/h2&gt;
-
-&lt;pre&gt;
-rx-elf-gcc -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/ -isystem /home/nona/build/newlib-1.20.0-20121219/rx-elf/newlib/targ-include -isystem /home/nona/build/newlib-1.20.0-20121219/newlib/libc/include -B/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/rx -L/home/nona/build/newlib-1.20.0-20121219/rx-elf/libgloss/libnosys -L/home/nona/build/newlib-1.20.0-20121219/libgloss/rx    -DPACKAGE_NAME=\"newlib\" -DPACKAGE_TARNAME=\"newlib\" -DPACKAGE_VERSION=\"1.20.0\" -DPACKAGE_STRING=\"newlib\ 1.20.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -I. -I../../../.././newlib/libc/argz -ffunction-sections -fdata-sections  -DMISSING_SYSCALL_NAMES -fno-builtin      -g -O2 -c -o lib_a-dummy.o `test -f 'dummy.c' || echo '../../../.././newlib/libc/argz/'`dummy.c
-/home/nona/local/rx-tools/bin/rx-elf-gcc: 行 498: 対応する `)' を探索中に予期しないファイル終了 (EOF) です
-/home/nona/local/rx-tools/bin/rx-elf-gcc: 行 5038: 構文エラー: 予期しないファイル終了 (EOF) です
-&lt;/pre&gt;
-
-&lt;p&gt;うーん って感じ
-まだ未解決&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>GR-SAKURA であそんでみた(1回目)</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/20/sakura.html"/>
-    <id>https://nna774.net/blog/2014/03/20/sakura.html</id>
-    <published>2014-03-20T03:35:00+09:00</published>
-    <updated>2014-03-20T04:26:28+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;GR-SAKURA が部室にあったので遊んでみた。&lt;/p&gt;
-
-&lt;h1 id="section"&gt;さいしょに&lt;/h1&gt;
-&lt;p&gt;&lt;a href="http://japan.renesas.com/gr"&gt;オンラインコンパイラ&lt;/a&gt; があるのでとりあえず試す。&lt;/p&gt;
-
-&lt;p&gt;さくら用テンプレートを選んでとりあえず、build。
-左のほうのエクスプローラっぽいところにsketch.bin が表示されるので、右クリックのちダウンロード。
-さくらをUSB で繋いで、赤いボタンを二回ほど押せば、USBデバイスとして認識されたので、ダウンロードした。sketch.bin を書きこむ。
-実行が始まるっぽい。&lt;/p&gt;
-
-&lt;p&gt;テンプレートはLED がウェーブしてるのっぽい。&lt;/p&gt;
-
-&lt;h2 id="section-1"&gt;なんか&lt;/h2&gt;
-&lt;p&gt;void setup() 関数が初期化の一回のみ呼ばれるもので、void loop() がループするものらしい。
-loop() が処理を戻さないと(while(1) なんかで中で無限ループしてたりすると) 不幸が起こるってことがヘッダを読んでたら書いてあった。&lt;/p&gt;
-
-&lt;h1 id="section-2"&gt;シリアル通信&lt;/h1&gt;
-&lt;p&gt;Serial.begin(9600); をsetup() で呼ぶとPC とのシリアル通信をすることができる。
-Serial.println() を使ってシリアルに書きこむことができる。
-Serial.println(); には文字リテラルと数字は渡すことができた。 他にも渡せるものもあると思う(ちゃんとドキュメント読めって感じだ)。&lt;/p&gt;
-
-&lt;p&gt;Serial.setDefault() をsetup() で呼んでおくことで、printf() でもシリアルに出力できるらしい。(serial.h に書いてあった)
-最初printf("hoge"); して何も出ないなーと思っていたら、printf() は改行が来るまでバッファしているらしい。&lt;/p&gt;
-
-&lt;p&gt;/dev/ttyACM0 に見えてるので、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cat /dev/ttyACM0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;でsakura 側で書いたものが見えた。&lt;/p&gt;
-
-&lt;h1 id="rx-elf-gcc"&gt;rx-elf-gcc&lt;/h1&gt;
-&lt;p&gt;オンラインコンパイラで毎回build するのは面倒だなーと思っていたら、makefile を眺めていたらrx-elf-gcc でクロスコンパイルできるらしい。
-クロスコンパイル環境整えたいけど、AUR のrx-elf-gcc はbuild できなかったので、自分でビルドしないとなー って感じだ。&lt;/p&gt;
-
-&lt;h1 id="http-api"&gt;HTTP API&lt;/h1&gt;
-&lt;p&gt;&lt;a href="http://tool-cloud.renesas.com/Renesas/ref/api.html"&gt;API&lt;/a&gt; が存在して、
-これを使ってAPI 経由でWeb Compiler を使えるっぽい。
-手元でビルドする環境を簡単に整えられないならこっちだけでがんばってもいいかも&lt;/p&gt;
-
-&lt;p&gt;ビルドもこれでできるので、いい感じのelisp でも気が向いたら書きたい。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>春合宿しゅーりょー</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/16/hanase.html"/>
-    <id>https://nna774.net/blog/2014/03/16/hanase.html</id>
-    <published>2014-03-16T21:07:00+09:00</published>
-    <updated>2014-03-17T14:16:38+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;下界に帰ってきた。&lt;/p&gt;
-
-&lt;p&gt;スライドこうかいしないと。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>春合宿1日目</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/12/hanase.html"/>
-    <id>https://nna774.net/blog/2014/03/12/hanase.html</id>
-    <published>2014-03-12T17:36:00+09:00</published>
-    <updated>2014-03-12T19:56:50+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;電波の入らないところに来ています。&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>KernelVM を聞きにいった</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/10/kernelvm.html"/>
-    <id>https://nna774.net/blog/2014/03/10/kernelvm.html</id>
-    <published>2014-03-10T01:24:00+09:00</published>
-    <updated>2014-03-10T01:33:18+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;いろいろ面白い話が聞けた。&lt;/p&gt;
-
-&lt;p&gt;もう眠いので今日聞いた話の中で試してみたいもののリンクをはっておくだけにします。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://www.slideshare.net/fadis/linux-32051658"&gt;小さいLinux環境の作り方&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://speakerdeck.com/ntddk/introduction-to-qubes-os-ja"&gt;Qubes OS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
