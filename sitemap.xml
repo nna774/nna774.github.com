@@ -236,6 +236,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nna774.net/blog/2014/06/08/google.html</loc>
+    <lastmod>2014-06-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nna774.net/blog/2014/06/09/2048.html</loc>
+    <lastmod>2014-06-09</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nna774.net/blog/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
@@ -391,12 +403,32 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://nna774.net/blog/tags/dev-null.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://nna774.net/blog/tags/google.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://nna774.net/blog/2014.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://nna774.net/blog/2014/02/11.html</loc>
     <changefreq>never</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://nna774.net/blog/2014.html</loc>
+    <loc>https://nna774.net/blog/2014/06/09.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://nna774.net/blog/2014/06/08.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -556,7 +588,7 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://nna774.net/blog/tags/dev-null.html</loc>
+    <loc>https://nna774.net/blog/2014/06.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>

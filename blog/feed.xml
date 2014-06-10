@@ -5,10 +5,95 @@
   <id>https://nna774.net/blog</id>
   <link href="https://nna774.net/blog"/>
   <link href="https://nna774.net/blog/feed.xml" rel="self"/>
-  <updated>2014-05-31T04:35:00+09:00</updated>
+  <updated>2014-06-09T19:26:00+09:00</updated>
   <author>
     <name>NoNameA 774</name>
   </author>
+  <entry>
+    <title>2048-AI コンテスト 第二回</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/06/09/2048.html"/>
+    <id>https://nna774.net/blog/2014/06/09/2048.html</id>
+    <published>2014-06-09T19:26:00+09:00</published>
+    <updated>2014-06-09T20:54:34+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;2048 AI コンテストの第二回があった。&lt;/p&gt;
+
+&lt;p&gt;今回の私の出場した際のソースコードは&lt;a href="https://github.com/nna774/2048-cpp/tree/562d483df79d70a3e18cd4afa74e5d7385345c99"&gt;これ&lt;/a&gt; です。&lt;/p&gt;
+
+&lt;p&gt;今回は三位でした。&lt;/p&gt;
+
+&lt;p&gt;前回の時と比べて、かなりの高速化を図れたので、10手読みまで行くことが可能となった(前回は6手読みだった)。&lt;/p&gt;
+
+&lt;p&gt;Grid を前回はstd::array&amp;lt;std::array&amp;lt;int, 4&amp;gt;, 4&amp;gt; だったが、64bit int 一つで16個のGrid を表わすようにして、色々な操作を謎のbit 演算にすることでかなり高速になった。&lt;/p&gt;
+
+&lt;p&gt;謎のbit 演算が沢山でてきて辛かったので、Google Test も導入した。&lt;/p&gt;
+
+&lt;p&gt;10手まで読めるようになったことによって、4096 まで作れるようになった。&lt;/p&gt;
+
+&lt;p&gt;まだ100〜1000回に一回程度しか8192 を作ってくれない。&lt;/p&gt;
+
+&lt;p&gt;GA も実装しないと。&lt;/p&gt;
+
+&lt;h1 id="ref"&gt;ref&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2048AIコンテスト 第2回 - KMC活動ブログ &lt;a href="http://kmc.hatenablog.jp/entry/2014/06/09/032439"&gt;http://kmc.hatenablog.jp/entry/2014/06/09/032439&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;2048のAIを書かなかった話。あるいは遺伝的プログラミングの話 - @Angelworm_とは &lt;a href="http://angelworm.hatenablog.com/entry/2014/06/07/024027"&gt;http://angelworm.hatenablog.com/entry/2014/06/07/024027&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Google による検閲行為</title>
+    <link rel="alternate" href="https://nna774.net/blog/2014/06/08/google.html"/>
+    <id>https://nna774.net/blog/2014/06/08/google.html</id>
+    <published>2014-06-08T03:51:00+09:00</published>
+    <updated>2014-06-08T05:02:12+09:00</updated>
+    <author>
+      <name>NoNameA 774</name>
+    </author>
+    <content type="html">&lt;p&gt;Google が検索結果に対する検閲行為を始めたらしい。&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;bingとbaiduの「ロリ漫画」での検索結果は正常。&amp;#10;一方Googleではわずか17件しかヒットしない。&amp;#10;もはやGoogleは正確な検索結果を欲する人にとっての最適解ではなくなりました。 &lt;a href="http://t.co/fMnxB98ZDc"&gt;pic.twitter.com/fMnxB98ZDc&lt;/a&gt;&lt;/p&gt;&amp;mdash; ロリ漫画.com (@lolimangacom) &lt;a href="https://twitter.com/lolimangacom/statuses/475244382929444864"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;Googleで「ロリ」と検索してみれば分かりますが、ごっそりと検索結果が除外され、20件程度しか表示されません。&amp;#10;&amp;#10;行政ではないとはいえ、大きなシェアを獲得している企業が、絶対に禁止(憲法21条2項)されている検閲同然の行為を行うことは残念極まりないです。&lt;/p&gt;&amp;mdash; ロリ漫画.com (@lolimangacom) &lt;a href="https://twitter.com/lolimangacom/statuses/475242649620733952"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;Googleが八部だけでなく、ロリ系ワードの検閲を始めたようです。&amp;#10;&amp;#10;ろりともだちの皆様は、『bing』や『百度』といった検索サービスを使うことをオススメします。&amp;#10;&amp;#10;ロリ漫画.comも当然検索できます。&lt;/p&gt;&amp;mdash; ロリ漫画.com (@lolimangacom) &lt;a href="https://twitter.com/lolimangacom/statuses/475241686876946433"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;えー「ロリコン」で検索してWikiepdiaの「ロリータ・コンプレックス」の項へ到達できないとか、マジに頭の悪過ぎる誰得チューニングなんですけど。Googleさんは、本当に自分達が何をやっているか、どれだけものすごいことをやらかしているか、分かってるんでしょーか？&lt;/p&gt;&amp;mdash; Yuzuru Nakagawa (@mishiki) &lt;a href="https://twitter.com/mishiki/statuses/475301011288895488"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;実際、Google検索で、「ロリコン」で検索しても、まともな内容のページは結果に出ず、使いものにならないようになっている。&lt;/p&gt;
+
+&lt;p&gt;「ロリ」で検索した時の結果がこれである。&lt;br /&gt;
+&lt;img alt="「ロリ」検索結果" src="/blog/2014/06/08/loli.png" /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;
+この検閲について、Google で検索した際の結果はよりひどい。&lt;br /&gt;
+&lt;img alt="「Google 検索 ロリ」検索結果" src="/blog/2014/06/08/googleLoli.png" /&gt; &lt;br /&gt;
+「どのような検閲が行われているか」を検索することすら難しいのだ。&lt;br /&gt;
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;Google が検閲を行っていると書いてあるサイトが今度はGoogle から消され, さらにそれに言及したページも消され, 健全な市民はGoogle による検閲行為など全く誰も知らないセカイ&lt;/p&gt;&amp;mdash; 駆逐艦のな改ぜろ[43/---] ##% (@nonamea774) &lt;a href="https://twitter.com/nonamea774/statuses/475343713854451713"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;まあ俺は、私企業たる検索エンジン運営者が「ロリ」での検索結果を自粛するのは、アリちゃーアリだと思っている。でも、「ロリ 規制 google」での検索結果の質が極めて悪いのというのはいただけない。こういう検索結果の質を改善しない「自粛」なら、Google は Evil だ。&lt;/p&gt;&amp;mdash; Yuzuru Nakagawa (@mishiki) &lt;a href="https://twitter.com/mishiki/statuses/475293036784541697"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;strong&gt;「この検閲行為を、「ロリ」のフィルターだから問題無いか」と考えることは危険である&lt;/strong&gt;&lt;br /&gt;
+&lt;blockquote class="twitter-tweet" lang="ja"&gt;&lt;p&gt;彼等は次にロリを攻撃した。しかし、私は沈黙していた。&amp;#10;私はロリコンではなかったから。&amp;#10;&amp;#10;ある日、彼等は私のもとにやって来た。その時、私は初めて彼等に抗議した。&amp;#10;しかし、その時には、何もかもが遅かった。&lt;/p&gt;&amp;mdash; 兄の要望で脱毛サロン通ってたんですぅ (@hidesys) &lt;a href="https://twitter.com/hidesys/statuses/475307687459049472"&gt;2014, 6月 7&lt;/a&gt;&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;引き続きどうなるかを観察しておかないといけない案件なのでとりあえずメモまでに。&lt;/p&gt;
+
+&lt;h2 id="ref"&gt;ref&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;googleがロリエロ八分を実行したとの説 &lt;a href="http://togetter.com/li/677379"&gt;http://togetter.com/li/677379&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;【時事】Google検索の未成年関係のワード規制まとめ &lt;a href="http://yojonovel.blog.fc2.com/blog-entry-95.html"&gt;http://yojonovel.blog.fc2.com/blog-entry-95.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Twitter / mishiki: Googleが、判断基準の透明性のまるでない恣意的な情報の選別を行いますと宣言しているのなら、…&lt;a href="https://twitter.com/mishiki/status/475295821034844160"&gt;https://twitter.com/mishiki/status/475295821034844160&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Twitter / otakutokkai: 「ロリ」と入力して検索すると，最初の画面では… &lt;a href="https://twitter.com/otakutokkai/status/475221510202740736"&gt;https://twitter.com/otakutokkai/status/475221510202740736&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;【悲報】Google検索で 二次ロリ 規制はじまる 【2chまとめ】ニュース速報嫌儲板 &lt;a href="http://newskenm.blog.fc2.com/blog-entry-18648.html"&gt;http://newskenm.blog.fc2.com/blog-entry-18648.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Google Test</title>
     <link rel="alternate" href="https://nna774.net/blog/2014/05/31/googletest.html"/>
@@ -346,49 +431,6 @@ RewriteRule ^(.*)\.html$ $1.html.gz [QSA,L]
 &lt;p&gt;SSL の秘密鍵とりかえたいけどStart SSL は再発行にお金かかるらしいし、うーん ってかんじだ。
 そもそも攻撃に狙われた可能性は低いとは思うけれど……(よくない考え方だ。安全側に倒すべきではある)&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>atom</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/04/07/atom.html"/>
-    <id>https://nna774.net/blog/2014/04/07/atom.html</id>
-    <published>2014-04-07T00:00:00+09:00</published>
-    <updated>2014-04-25T01:36:59+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;h1 id="section"&gt;11歳ですよもう&lt;/h1&gt;
-&lt;p&gt;鉄腕アトムも11歳。 だいぶ未来に来てしまった……&lt;/p&gt;
-
-&lt;h1 id="section-1"&gt;もざいく&lt;/h1&gt;
-&lt;p&gt;アトムの誕生日は、電気の恋人の歌詞で覚えている。&lt;/p&gt;
-
-&lt;p&gt;歌詞： &lt;a href="http://www.sham.jp/studio/sound/denki/index.shtml"&gt;Sham Studio&lt;/a&gt; (リンク先音注意)&lt;/p&gt;
-
-&lt;pre&gt;2003年4月7日に　未来のロボが生まれなくても&lt;/pre&gt;
-
-&lt;h2 id="section-2"&gt;電気の恋人&lt;/h2&gt;
-&lt;p&gt;私の小さな時にはもう&lt;em&gt;PC&lt;/em&gt; 98 ではなくて、&lt;em&gt;Windows&lt;/em&gt; 98 が家にあったような時代であったので、この曲の歌詞の最初のほうのような事は実際にはやったことは無いのだけれど(私の初めて触ったBASIC はWindows98 の上での&lt;a href="http://hp.vector.co.jp/authors/VA008683/"&gt;十進BASIC&lt;/a&gt;だ。プログラムの意味もよくわからないまま、豊富に同梱されていたサンプルプログラムを改造してみていた)、それでも、この曲を初めて聞いてからだけの機械の進化はすさまじくて、この曲自体を&lt;a href="http://www.enterbrain.co.jp/magical-cute/sp/heartsnative/songlist.html"&gt;機械が歌う&lt;/a&gt;ほどだ。&lt;/p&gt;
-
-&lt;p&gt;小さい時に聞いていたこの歌をミクが歌うというのは、なんというか、機械の進歩を強く表わしている気がして本当に好きだ。&lt;/p&gt;
-
-&lt;p&gt;この曲の入ったCD は現在入手困難ですが(わたしも欲しい)、&lt;a href="http://www.amazon.co.jp/dp/B00569BHDY"&gt;Amazon&lt;/a&gt; や&lt;a href="https://itunes.apple.com/jp/album/id106636118"&gt;iTunes&lt;/a&gt; なら購入することができます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://www.enterbrain.co.jp/magical-cute/sp/heartsnative/"&gt;Heartsnative&lt;/a&gt; は他にも、「みんなみくみくにしてあげる♪」は"機械と人間" って感じがしてすごくいいと思う(そういう意味では、&lt;a href="http://www.mosaictune.com/"&gt;Heartsnative2&lt;/a&gt; のほうはミクしか歌っていないので、比べると好きじゃない)。&lt;/p&gt;
-
-&lt;p&gt;何が言いたいかよくわからない記事になってしまった。アトムの誕生日はどっかにいってミクが好き って記事になってるし。しかも遅れて公開だし。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>クロスコンパイラbuild できた</title>
-    <link rel="alternate" href="https://nna774.net/blog/2014/03/24/sakura.html"/>
-    <id>https://nna774.net/blog/2014/03/24/sakura.html</id>
-    <published>2014-03-24T06:12:00+09:00</published>
-    <updated>2014-03-24T06:15:52+09:00</updated>
-    <author>
-      <name>NoNameA 774</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="https://nna774.net/blog/2014/03/22/sakura.html"&gt;前回&lt;/a&gt; build できないっていってたけど、&lt;a href="http://www.kpitgnutools.com/sourceCode.php"&gt;ここ&lt;/a&gt; のv13.01 を使っていたことに気づいたので、v14.01 のコードをおとしてきて、&lt;a href="http://qiita.com/jjzak/items/8e9d9d98370181aa97fa"&gt;これ&lt;/a&gt; のとうりにやったらできた。&lt;/p&gt;
 </content>
   </entry>
 </feed>
